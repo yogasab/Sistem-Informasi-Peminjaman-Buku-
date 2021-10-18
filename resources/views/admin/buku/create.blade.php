@@ -81,7 +81,7 @@
           <div class="form-group">
             <label for="tahun_terbit">Tahun Terbit</label>
             <input type="text" id="tahun_terbit" class="form-control @error('tahun_terbit') is-invalid @enderror"
-              id="tahun_terbit" name="tahun_terbit" placeholder="Harga Buku" value="{{ old('tahun_terbit') }}">
+              id="tahun_terbit" name="tahun_terbit" placeholder="Tahun Terbit" value="{{ old('tahun_terbit') }}">
             @error('tahun_terbit')
             <span class="invalid-feedback" role="alert">
               <strong>{{ $message }}</strong>
