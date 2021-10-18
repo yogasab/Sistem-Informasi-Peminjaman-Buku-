@@ -6,7 +6,10 @@ use App\Buku;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Buku\BukuRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+
 // use Illuminate\Http\Response;
 
 class BukuController extends Controller
@@ -80,7 +83,7 @@ class BukuController extends Controller
   public function show(Buku $buku)
   {
     $data = [
-      'book' => $buku
+      'book' => $buku,
     ];
     return view('buku.show', $data);
   }

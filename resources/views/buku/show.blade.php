@@ -62,6 +62,7 @@
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-primary">Details</strong>
+
             <h3 class="mb-0">{{ $book->judul_buku }} ({{ $book->tahun_terbit }})</h3>
             <div class="mb-1 text-muted">{{ $book->penulis }}</div>
             <p class="card-text mb-auto">
@@ -69,16 +70,13 @@
               iusto debitis ullam perferendis odit?
             </p>
             <div class="row">
-              <button href="{{ route('buku.index') }}" class="btn btn-info mr-3 ml-2 font-weight-bold">
-                Kembali
-              </button>
-              <form class="form-inline" method="POST" action="{{ route('peminjaman.store') }}"
+              <form class="form-inline mb-4" method="POST" action="{{ route('peminjaman.store') }}"
                 enctype="multipart/form-data">
                 @csrf
                 <input type="hidden" name="anggota_id" value="{{ Auth::guard('anggota')->user()->id }}">
                 <input type="hidden" name="buku_id" value="{{ $book->id }}">
                 <input type="hidden" name="admin_id" value="1">
-                <button type="submit" class="btn btn-success font-weight-bold">Ajukan Peminjaman</button>
+                <button type="submit" class="btn btn-success font-weight-bold ml-3">Ajukan Peminjaman</button>
                 <div class="form-group">
                   <label for="tgl_kembali" class="ml-4 mr-2">Tanggal Pengembalian</label>
                   <input name="tgl_kembali" class="date form-control @error('tgl_kembali') is-invalid @enderror"
@@ -87,15 +85,15 @@
               </form>
             </div>
           </div>
-          <div class="col-auto d-none d-lg-block">
-            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
-              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
+          <div class="col-auto d-none d-lg-block mb-0">
+            <img class="card-img-top w-100" src="{{ Storage::url($book->nama_gambar) }}" alt="Card image cap">
           </div>
         </div>
+      </div>
+      <div class="col-md-2">
+        <a href="{{ route('buku.index') }}" class="btn btn-info py-0 mr-3 ml-2 font-weight-bold">
+          Kembali
+        </a>
       </div>
     </div>
   </div>

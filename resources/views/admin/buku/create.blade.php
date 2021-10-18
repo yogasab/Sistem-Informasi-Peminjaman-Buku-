@@ -91,7 +91,7 @@
           <div class="form-group">
             <label for="kode_buku">Kode Buku</label>
             <input type="text" id="kode_buku" class="form-control @error('kode_buku') is-invalid @enderror"
-              id="kode_buku" name="kode_buku" placeholder="Harga Buku" value="{{ old('kode_buku') }}">
+              id="kode_buku" name="kode_buku" placeholder="Kode Buku" value="{{ old('kode_buku') }}">
             @error('kode_buku')
             <span class="invalid-feedback" role="alert">
               <strong>{{ $message }}</strong>
