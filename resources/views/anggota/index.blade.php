@@ -105,10 +105,10 @@
           <!-- Card Header - Dropdown -->
           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
             <h3 class="m-0 font-weight-bold text-primary">Daftar Buku</h3>
-            <div class="input-group rounded w-25">
+            {{-- <div class="input-group rounded w-25">
               <input id="search" name="judul_buku" type="search" class="form-control rounded" placeholder="Search"
                 aria-label="Search" aria-describedby="search-addon" />
-            </div>
+            </div> --}}
           </div>
           <!-- Card Body -->
           <div class="card-body">
@@ -138,19 +138,19 @@
 
 @push('script')
 <script type="text/javascript">
+  $.ajaxSetup({ headers: { 'csrf-token' : '{{ csrf_token() }}' } });
+</script>
+<script type="text/javascript">
   $('#search').on('keyup',function(){
     $value = $(this).val();
     $.ajax({
     type : 'get',
-    url : '{{ route('search-books') }}',
-    data : {'judul_buku':$value},
+    url : 'search',
+    data : {'search':$value},
     success:function(data){
-    $('card').html(data);
+      console.log(data);
     }
     });
   });
-</script>
-<script type="text/javascript">
-  $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
 </script>
 @endpush

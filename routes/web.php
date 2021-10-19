@@ -52,4 +52,4 @@ Route::resource('anggota', 'Anggota\AnggotaController');
 Route::resource('buku', 'Buku\BukuController');
 Route::get('/peminjaman/create/{buku}', 'Peminjaman\PeminjamanController@create')->name('peminjaman.create');
 Route::resource('peminjaman', 'Peminjaman\PeminjamanController');
-Route::get('/search', 'Buku\BukuController@searchBooks')->name('search-books');
+Route::get('search', 'Buku\BukuController@searchBooks');
