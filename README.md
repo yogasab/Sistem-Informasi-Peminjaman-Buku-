@@ -1,5 +1,5 @@
 ## Demo Link
-http://peminjaman-buku.test/
+http://peminjaman-buku.herokuapp.com/
 
 1. Login Admin | email: admin@email.com | password: 123123123
 2. Login Anggota | email: anggota1@gmail.com | password: password
