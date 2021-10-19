@@ -21,11 +21,17 @@
 
 2. Menu Approve Admin 
 ![Pengajuan Buku Admin Approve](https://user-images.githubusercontent.com/68288783/137866016-a1c19bdf-86a1-428a-a51a-23c643e49137.PNG)
-![Stok Buku Sebelum Sebelum Approve](https://user-images.githubusercontent.com/68288783/137866138-a44266f5-9793-4fb0-9d12-df004be3bc70.PNG)
 
-## Menu Dashboard Stok Buku Saat Sebelum Dan Sesudah Approve
+3. Menu Dashboard Stok Buku Saat Sebelum Dan Sesudah Approve
 ![Stok Buku Sebelum Sebelum Approve](https://user-images.githubusercontent.com/68288783/137866605-e32d4d9f-32df-416c-8be8-76dc39bd81d6.PNG)
 ![Stok Buku Sebelum Setelah Approve](https://user-images.githubusercontent.com/68288783/137866579-96b9476d-4ba1-47df-9f5b-cf943655238a.PNG)
 
-3, Menu Reject Admin
+4. Menu Reject Admin
 ![Pengajuan Buku Admin Rejected](https://user-images.githubusercontent.com/68288783/137866225-fa87e8dd-47d8-4478-915c-1259a62cd151.PNG)
+
+5. List Peminjaman Buku
+![List Peminjam Buku](https://user-images.githubusercontent.com/68288783/137868745-c69398c8-0f62-4101-b25f-ae4c16fce5fd.PNG)
+![Stok Buku Sebelum Di Selesaikan](https://user-images.githubusercontent.com/68288783/137868805-a87eb0c6-e5d5-49bb-9333-bf97133680fa.PNG)
+![Status Buku Di Selesaikan](https://user-images.githubusercontent.com/68288783/137868820-31e3f229-c5d1-47e0-9b22-1cf3fa05db7c.PNG)
+![Stok Buku SetelahDi Selesaikan](https://user-images.githubusercontent.com/68288783/137868834-3731bdc7-1b2f-4e07-9a43-d01a78340b36.PNG)
+
