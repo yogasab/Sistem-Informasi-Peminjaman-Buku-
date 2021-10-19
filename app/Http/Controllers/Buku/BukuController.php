@@ -114,6 +114,9 @@ class BukuController extends Controller
   public function update(Request $request, Buku $buku)
   {
     $validatedData = $request->all();
+    $nama_gambar = $request->file('nama_gambar')->getClientOriginalName() . '-' . time() . '.' . $request->file('nama_gambar')->extension();
+    $validatedData['nama_gambar'] = $nama_gambar;
+    $request->file('nama_gambar')->move(public_path('img'), $nama_gambar);
     $buku->update($validatedData);
     return redirect()->route('admin.buku.index');
   }
