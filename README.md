@@ -23,7 +23,9 @@
 ![Pengajuan Buku Admin Approve](https://user-images.githubusercontent.com/68288783/137866016-a1c19bdf-86a1-428a-a51a-23c643e49137.PNG)
 ![Stok Buku Sebelum Sebelum Approve](https://user-images.githubusercontent.com/68288783/137866138-a44266f5-9793-4fb0-9d12-df004be3bc70.PNG)
 
+## Menu Dashboard Stok Buku Saat Sebelum Dan Sesudah Approve
+![Stok Buku Sebelum Sebelum Approve](https://user-images.githubusercontent.com/68288783/137866605-e32d4d9f-32df-416c-8be8-76dc39bd81d6.PNG)
+![Stok Buku Sebelum Setelah Approve](https://user-images.githubusercontent.com/68288783/137866579-96b9476d-4ba1-47df-9f5b-cf943655238a.PNG)
+
 3, Menu Reject Admin
 ![Pengajuan Buku Admin Rejected](https://user-images.githubusercontent.com/68288783/137866225-fa87e8dd-47d8-4478-915c-1259a62cd151.PNG)
-
-![Pengajuan Buku Admin Rejected](https://user-images.githubusercontent.com/68288783/137866098-3a21ff0b-1e29-46a1-93ee-456943045d95.PNG)
