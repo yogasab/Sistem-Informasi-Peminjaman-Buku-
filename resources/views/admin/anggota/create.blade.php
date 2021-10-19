@@ -95,6 +95,10 @@
             </span>
             @enderror
           </div>
+          <div class="form-group">
+            <input class="form-control text-danger" type="text" placeholder="Password default adalah 'password'"
+              readonly>
+          </div>
           <button type="submit" class="btn btn-info">Tambah</button>
         </form>
       </div>
