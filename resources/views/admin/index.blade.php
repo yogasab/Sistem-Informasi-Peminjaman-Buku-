@@ -174,7 +174,7 @@
                 <tbody>
                   @foreach ($peminjaman as $peminjam)
                   <tr>
-                    {{-- <td>{{ $peminjam->anggota->name }}</td> --}}
+                    <td>{{ $peminjam->anggota->name }}</td>
                     <td>{{ $peminjam->tgl_pinjam }}</td>
                     <td>{{ $peminjam->tgl_kembali }}</td>
                     <td>{{ $peminjam->buku->judul_buku }}</td>
