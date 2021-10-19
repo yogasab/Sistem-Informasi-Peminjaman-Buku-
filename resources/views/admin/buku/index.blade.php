@@ -87,7 +87,7 @@
                 <td>{{ $buku->kode_buku }}</td>
                 <td>{{ $buku->stok_buku }}</td>
                 <td>
-                  <img src="/img/{{ $buku->nama_gambar }}" alt="img" class="w-50">
+                  <img src="/img/{{ $buku->nama_gambar }}" alt="img" class="w-75">
                 </td>
                 <td>
                   <span>
