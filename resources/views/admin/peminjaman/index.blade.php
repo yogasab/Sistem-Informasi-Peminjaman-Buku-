@@ -113,7 +113,7 @@
                   @if ($anggotas->count())
                   @foreach ($anggotas as $anggota)
                   <tr>
-                    {{-- <td>{{ $anggota->anggota->name }}</td> --}}
+                    <td>{{ $anggota->anggota->name }}</td>
                     <td>{{ $anggota->buku->judul_buku }}</td>
                     <td>{{ $anggota->buku->penulis }}</td>
                     <td>{{ $anggota->buku->tahun_terbit }}</td>
