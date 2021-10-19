@@ -44,20 +44,45 @@
       </div>
       <!-- Card Body -->
       <div class="card-body">
-        <div class="row">
-          @foreach ($books as $book)
-          <div class="col-lg-4 mb-5">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="/img/{{ $book->nama_gambar }}" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">{{ $book->judul_buku }}</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="{{ route('buku.show', $book->id) }}" class="btn btn-primary">Details</a>
-              </div>
-            </div>
-          </div>
-          @endforeach
+        <div class="table-responsive">
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Judul Buku</th>
+                <th>Penulis</th>
+                <th>Tahun Terbit</th>
+                <th>Kode Buku</th>
+                <th>Cover</th>
+                <th>Info</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Judul Buku</th>
+                <th>Penulis</th>
+                <th>Tahun Terbit</th>
+                <th>Kode Buku</th>
+                <th>Cover</th>
+                <th>Cover</th>
+              </tr>
+            </tfoot>
+            <tbody>
+              @foreach ($books as $book)
+              <tr>
+                <td>{{ $book->judul_buku }}</td>
+                <td>{{ $book->penulis }}</td>
+                <td>{{ $book->tahun_terbit}}</td>
+                <td>{{ $book->penerbit }}</td>
+                <td>
+                  <img src="/img/{{ $book->nama_gambar }}" alt="img" class="w-50">
+                </td>
+                <td>
+                  <a href="{{ route('buku.show', $book->id) }}" class="btn btn-primary">Details</a>
+                </td>
+              </tr>
+              @endforeach
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

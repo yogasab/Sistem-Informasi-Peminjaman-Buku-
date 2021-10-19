@@ -104,7 +104,7 @@
         <div class="card shadow mb-4">
           <!-- Card Header - Dropdown -->
           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-            <h3 class="m-0 font-weight-bold text-primary">Daftar Buku</h3>
+            <h3 class="m-0 font-weight-bold text-primary">Katalog Buku</h3>
             {{-- <div class="input-group rounded w-25">
               <input id="search" name="judul_buku" type="search" class="form-control rounded" placeholder="Search"
                 aria-label="Search" aria-describedby="search-addon" />
