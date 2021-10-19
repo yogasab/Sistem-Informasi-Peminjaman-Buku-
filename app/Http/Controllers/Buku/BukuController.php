@@ -69,7 +69,9 @@ class BukuController extends Controller
   public function store(BukuRequest $request)
   {
     $validatedData = $request->all();
-    $validatedData['nama_gambar'] = $request->file('nama_gambar')->store('', 'public');
+    $nama_gambar = $request->file('nama_gambar')->getClientOriginalName() . '-' . time() . '.' . $request->file('nama_gambar')->extension();
+    $validatedData['nama_gambar'] = $nama_gambar;
+    $request->file('nama_gambar')->move(public_path('img'), $nama_gambar);
     Buku::create($validatedData);
     return redirect()->route('admin.buku.index')->with('success', 'Buku baru berhasil ditambahkan');
   }
