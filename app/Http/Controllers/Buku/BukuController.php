@@ -134,11 +134,13 @@ class BukuController extends Controller
   {
     if ($request->ajax()) {
       $output = "";
-      $books = DB::table('bukus')->where('judul_buku', 'LIKE', '%' . $request->judul_buku . '%')->get();
+      $books = DB::table('bukus')->where('judul_buku', 'LIKE', '%' . $request->search . "%")->get();
       if ($books) {
         foreach ($books as $key => $book) {
           $output .= '<tr>' .
             '<td>' . $book->judul_buku . '</td>' .
+            '<td>' . $book->penulis . '</td>' .
+            '<td>' . $book->tahun_terbit . '</td>' .
             '</tr>';
         }
         return Response($output);

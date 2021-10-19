@@ -96,7 +96,7 @@
                     <th>Peminjam</th>
                     <th>Status</th>
                   </tr>
-              </tfoot>
+                </tfoot>
                 <tbody>
                   @if ($anggotas->count())
                   @foreach ($anggotas as $anggota)
