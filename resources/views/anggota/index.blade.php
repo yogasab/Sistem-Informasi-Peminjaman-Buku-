@@ -116,7 +116,7 @@
               @foreach ($books as $book)
               <div class="col-lg-4 mb-5">
                 <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="{{ Storage::url($book->nama_gambar) }}" alt="Card image cap">
+                  <img class="card-img-top" src="/img/{{ $book->nama_gambar }}" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">{{ $book->judul_buku }}</h5>
                     <p class="card-text">{!! Str::limit($book->sinopsis, 150) !!}</p>

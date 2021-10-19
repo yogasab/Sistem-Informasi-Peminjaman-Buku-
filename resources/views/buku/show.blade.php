@@ -76,8 +76,8 @@
                 <input type="hidden" name="anggota_id" value="{{ Auth::guard('anggota')->user()->id }}">
                 <input type="hidden" name="buku_id" value="{{ $book->id }}">
                 <input type="hidden" name="admin_id" value="1">
-                <button type="submit" class="btn btn-success font-weight-bold ml-3">Ajukan Peminjaman</button>
-                <div class="form-group">
+                <button type="submit" class="btn btn-success font-weight-bold ml-3 mt-4">Ajukan Peminjaman</button>
+                <div class="form-group mt-4">
                   <label for="tgl_kembali" class="ml-4 mr-2">Tanggal Pengembalian</label>
                   <input name="tgl_kembali" class="date form-control @error('tgl_kembali') is-invalid @enderror"
                     type="text">
@@ -86,7 +86,8 @@
             </div>
           </div>
           <div class="col-auto d-none d-lg-block mb-0">
-            <img class="card-img-top w-100" src="{{ Storage::url($book->nama_gambar) }}" alt="Card image cap">
+            <img class="card-img-top" style="height: 245px; width: 200px" src="/img/{{ $book->nama_gambar }}"
+              alt="Card image cap">
           </div>
         </div>
       </div>
